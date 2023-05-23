@@ -14,7 +14,7 @@ const MyToys = () => {
     const [sortOrder, setSortOrder] = useState('asc');
     const { user } = useContext(AuthContext);
     const navigate = useNavigate()
-    const url = `http://localhost:5000/toys?email=${user.email}&sortField=price&sortOrder=${sortOrder}`;
+    const url = `https://cars-zone-server-side-express-js.vercel.app/toys?email=${user.email}&sortField=price&sortOrder=${sortOrder}`;
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
@@ -32,7 +32,7 @@ const MyToys = () => {
    
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/toys?email=${user.email}&sortField=price&sortOrder=${sortOrder}`)
+    //     fetch(`https://cars-zone-server-side-express-js.vercel.app/toys?email=${user.email}&sortField=price&sortOrder=${sortOrder}`)
     //         .then(response => response.json())
     //         .then(data => setToys(data))
     //         .catch(error => console.error('Error retrieving products:', error));

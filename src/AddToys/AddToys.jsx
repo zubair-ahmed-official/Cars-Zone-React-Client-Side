@@ -25,7 +25,7 @@ const AddToys = () => {
         const newToys = { name, seller_name, seller_email, sub_category, available, rating, details, price, url, posted_by, email }
         console.log(newToys);
 
-        fetch('http://localhost:5000/toys', {
+        fetch('https://cars-zone-server-side-express-js.vercel.app/toys', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(newToys)
@@ -48,7 +48,7 @@ const AddToys = () => {
     const [options, setOptions] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/sub_categories')
+        fetch('https://cars-zone-server-side-express-js.vercel.app/sub_categories')
             .then(response => response.json())
             .then(data => {
                 setOptions(data);

@@ -7,7 +7,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://cars-zone-server-side-express-js.vercel.app/reviews')
             .then(response => response.json())
             .then(data => setReviews(data))
             .catch(error => console.error(error));

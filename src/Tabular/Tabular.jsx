@@ -17,7 +17,7 @@ const Tabular = ({ t, toys, setToys }) => {
       confirmButtonText: 'Yes!'
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/toys/${_id}`,
+        fetch(`https://cars-zone-server-side-express-js.vercel.app/toys/${_id}`,
           {
             method: 'DELETE'
           })

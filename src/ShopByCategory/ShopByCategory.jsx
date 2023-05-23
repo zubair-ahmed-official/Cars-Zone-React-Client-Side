@@ -16,9 +16,9 @@ const ShopByCategory = () => {
     const [matching, setMatching] = useState([]);
     // const { user } = useContext(AuthContext);
     const navigate = useNavigate()
-    // const url = `http://localhost:5000/toys?sub_category=${sub_category}`;
-    const url1 = `http://localhost:5000/sub_categories`;
-    const url2 = `http://localhost:5000/toys`;
+    // const url = `https://cars-zone-server-side-express-js.vercel.app/toys?sub_category=${sub_category}`;
+    const url1 = `https://cars-zone-server-side-express-js.vercel.app/sub_categories`;
+    const url2 = `https://cars-zone-server-side-express-js.vercel.app/toys`;
     useEffect(() => {
         fetch(url1)
             .then(res => res.json())
@@ -42,7 +42,7 @@ const ShopByCategory = () => {
             })
     }, [])
     const getProperty = (sub_category) => {
-        fetch(`http://localhost:5000/toys?sub_category=${sub_category}`)
+        fetch(`https://cars-zone-server-side-express-js.vercel.app/toys?sub_category=${sub_category}`)
             .then(res => res.json())
             .then(data => {
                 AOS.init();

@@ -17,10 +17,10 @@ const AllToys = () => {
     const [itemsPerPage, setItemsPerPage] = useState(20)
     // const navigate = useNavigate()
 
-    // const url = `http://localhost:5000/toys`;
+    // const url = `https://cars-zone-server-side-express-js.vercel.app/toys`;
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch(`http://localhost:5000/toys?page=${currentPage}&limit=${itemsPerPage}`)
+            const response = await fetch(`https://cars-zone-server-side-express-js.vercel.app/toys?page=${currentPage}&limit=${itemsPerPage}`)
             const data = await response.json();
             AOS.init();
             setToys(data);
@@ -40,8 +40,8 @@ const AllToys = () => {
     // const [searchResults, setSearchResults] = useState([]);
     // const handleSearch = async () => {
     //     try {
-    //         // const response = await axios.get(`http://localhost:5000/toys?name=${searchQuery}`);
-    //         const response = await axios.get(`http://localhost:5000/toys`);
+    //         // const response = await axios.get(`https://cars-zone-server-side-express-js.vercel.app/toys?name=${searchQuery}`);
+    //         const response = await axios.get(`https://cars-zone-server-side-express-js.vercel.app/toys`);
     //         const data = response.data;
 
     //         // Filter the API response data based on the search query
@@ -62,7 +62,7 @@ const AllToys = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/toys');
+            const response = await axios.get('https://cars-zone-server-side-express-js.vercel.app/toys');
             setToys(response.data);
         } catch (error) {
             console.error('Error fetching data:', error);

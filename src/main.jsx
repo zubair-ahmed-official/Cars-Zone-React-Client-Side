@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: '/AllToys',
         element:<AllToys></AllToys>,
-        loader: () => fetch('http://localhost:5000/totalCars')
+        loader: () => fetch('https://cars-zone-server-side-express-js.vercel.app/totalCars')
       },
       {
         path: '/MyToys',
@@ -60,12 +60,12 @@ const router = createBrowserRouter([
       {
         path: '/ToyDetails/:id',
         element: <PrivateRoutes><ToyDetails></ToyDetails></PrivateRoutes>,
-        loader: async ({ params }) => { return fetch(`http://localhost:5000/toys/${params.id}`) },
+        loader: async ({ params }) => { return fetch(`https://cars-zone-server-side-express-js.vercel.app/toys/${params.id}`) },
       },
       { 
         path:'/UpdateToy/:id',
         element: <PrivateRoutes><UpdateToy></UpdateToy></PrivateRoutes>,
-        loader: ({params})=> fetch(`http://localhost:5000/toys/${params.id}`)
+        loader: ({params})=> fetch(`https://cars-zone-server-side-express-js.vercel.app/toys/${params.id}`)
       }
     ]
   },
