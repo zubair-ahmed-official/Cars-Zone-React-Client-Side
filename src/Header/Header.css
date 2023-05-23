@@ -1,0 +1,59 @@
+.HeaderLink {
+    text-decoration: none;
+    color: gainsboro;
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+.Brand {
+    margin-right: 40px;
+}
+
+.loginButton {
+    background-color: rgba(244, 51, 90, 0.769);
+    padding: 7px 20px;
+    border: none;
+    color: azure;
+    margin-right: 90px;
+}
+
+.signoutButton {
+    background-color: rgba(255, 31, 113, 0.859);
+    padding: 7px 20px;
+    border: none;
+    color: azure;
+    margin-right: 90px;
+}
+
+@media screen and (width < 700px) {
+    .HeaderLink {
+
+        text-decoration: none;
+        color: gainsboro;
+        text-align: right;
+        margin-right: 90px;
+        font-weight: 600;
+    }
+
+    .Brand {
+        margin-right: 0px;
+    }
+
+    .loginButton {
+        background-color: rgba(244, 51, 90, 0.769);
+        padding: 5px 10px;
+        border: none;
+        color: azure;
+        margin-top: 10px;
+        margin-left: 280px;
+    }
+
+    .signoutButton {
+        background-color: rgba(255, 31, 113, 0.859);
+        padding: 0px 0px;
+        border: none;
+        color: azure;
+        margin-right: 0px;
+    }
+
+}

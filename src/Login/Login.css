@@ -1,0 +1,23 @@
+.Container
+{
+    margin: 0 70px;
+}
+.flexing
+{
+    display: flex;
+}
+
+.inputs
+{
+    padding: 10px;
+    width: 350px;
+    border-color: crimson;
+}
+.loginBtn
+{
+    background-color: #8a3737;
+    padding: 10px 30px;
+    border: none;
+    color:azure;
+    font-weight: 600;
+}

@@ -1,0 +1,19 @@
+.sliderColor {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.slider {
+    height: 700px;
+}
+
+@media screen and (width < 700px) {
+    .sliderColor {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+    }
+
+    .slider {
+        height: 300px;
+    }
+}

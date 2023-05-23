@@ -1,0 +1,12 @@
+.imgFluid
+{
+    width: 100%;
+    height: 250px; 
+}
+@media screen and (width < 700px) {
+    .imgFluid
+    {
+        width: 100%;
+        height: 100px;
+    }
+}

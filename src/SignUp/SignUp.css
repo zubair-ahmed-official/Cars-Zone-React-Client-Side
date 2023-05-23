@@ -1,0 +1,16 @@
+.signUpBtn
+{
+    background-color: rgb(124, 8, 31);
+    padding: 10px 30px;
+    border: none;
+    color:azure;
+    font-weight: 600;
+}
+.signUpBtnDisabled
+{
+    background-color: rgb(143, 104, 112);
+    padding: 10px 30px;
+    border: none;
+    color:azure;
+    font-weight: 600;
+}

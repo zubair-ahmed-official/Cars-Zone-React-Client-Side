@@ -1,0 +1,61 @@
+.categoryImg {
+    width: 150px;
+    height: 100px
+}
+
+.Tabs {
+    margin: 50px;
+}
+
+.tableHeaders {
+
+    font-weight: 700;
+    font-size: 21px
+}
+table{
+    width: 100%;
+}
+.view
+    {
+       background-color: crimson; 
+       color: aliceblue;
+       border: none;
+       padding: 5px 10px;
+    }
+
+@media screen and (width <700px) {
+    
+    .categoryImg {
+        width: 50px;
+        height: 50px
+    }
+
+    .Tabs {
+        margin: 0px;
+    }
+    .tableHeaders {
+
+       
+        font-weight: 600;
+        font-size: 16px;
+        
+    }
+    .tableBody
+    {
+        font-size: 14px;
+    }
+    table{
+        width: 100%;
+    }
+    .viewBtn
+    {
+        width: 10px;
+        height: 10px;  
+    }
+    .view
+    {
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+    
+}
